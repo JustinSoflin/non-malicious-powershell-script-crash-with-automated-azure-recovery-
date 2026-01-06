@@ -1,10 +1,12 @@
-# non-malicious powershell script crash (with automated azure recovery)
+# non-Malicious Powershell Script Crash (with Automated Azure Recovery)
 
 ## Incident Summary
 
 **_windows-target-1_**, a **honeypot virtual machine** used in the Cyber Range SOC, was identified as being **offline for approximately six weeks** following a **SYSTEM-level unhandled exception** that resulted in a **critical crash** recorded by **_WerFault.exe_**.
 
 As a result of the failure, the **attack simulation framework** ceased functioning, preventing the generation of **security telemetry** required for **student lab exercises**. The issue was initially surfaced through **community observation**, prompting further investigation into the underlying cause.
+
+Post-crash telemetry indicates that **Azure attempted automated recovery and health validation**, including **Guest Configuration assessments**, **Custom Script Extension retries**, and **Defender/HealthService activity**. These events reflect **Azure control-plane remediation efforts** against a **degraded guest state**, rather than continued attack activity or malicious persistence.
 
 The virtual machine has since been **re-deployed** to restore lab functionality. The **root cause of the crash remains undetermined**, presenting an opportunity for further analysis as an **educational exercise in incident reconstruction, telemetry correlation, and log analysis**.
 
