@@ -23,9 +23,9 @@
   - [Guest Configuration Compliance Checks gc_worker.exe](#guest-configuration-compliance-checks-gc_workerexe)
   - [Restarting the VM Did Not Restore Functionality](#restarting-the-vm-did-not-restore-functionality)
 - [Recommended Actions](#recommended-actions)
-  - [Immediate Recovery Actions](#1--immediate-recovery-actions)
-  - [Investigation Actions Already Taken](#2--investigation-actions-already-taken)
-  - [Monitoring Actions](#3--monitoring-actions)
+  - [Immediate Recovery Actions](#immediate-recovery-actions)
+  - [Investigation Actions Already Taken](#investigation-actions-already-taken)
+  - [Monitoring Actions](#monitoring-actions)
 - [Conclusion](#conclusion)
 
 ---
@@ -138,18 +138,18 @@ DeviceEvents
 
 While this event appears to be a non-malicious anomaly, the following actions are recommended to maintain reliable functionality and help detect similar issues in the future.
 
-1. Immediate Recovery Actions
+- Immediate Recovery Actions
    - Redeploy the affected VM
    - Ensure the Azure VM Agent and extensions are fully restored
    - Verify attack simulator scripts execute successfully
    - Run gc_worker.exe checks manually to ensure the VM is fully trusted and reporting correctly
 
-2. Investigation Actions Already Taken
+- Investigation Actions Already Taken
    - Review crash telemetry
    - Confirm no malicious artifacts appeared during the SYSTEM-level script crash
    - Document sequence of events, including WerFault, gc_worker, heartbeat service, and HealthService logs 
 
-3. Monitoring Actions
+- Monitoring Actions
    - Add crash monitoring for SYSTEM scripts
    - Detect future unhandled exceptions automatically
    - Audit scheduled tasks and guest agent health
