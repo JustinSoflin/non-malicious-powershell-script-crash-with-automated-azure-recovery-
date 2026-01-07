@@ -23,9 +23,9 @@
   - [Guest Configuration Compliance Checks gc_worker.exe](#guest-configuration-compliance-checks-gc_workerexe)
   - [Restarting the VM Did Not Restore Functionality](#restarting-the-vm-did-not-restore-functionality)
 - [Recommended Actions](#recommended-actions)
-  - [Immediate Recovery Actions](#immediate-recovery-actions)
-  - [Investigation Actions Already Taken](#investigation-actions-already-taken)
-  - [Monitoring Actions](#monitoring-actions)
+  - [Immediate Recovery Actions](#-immediate-recovery-actions)
+  - [Investigation Actions Already Taken](#-investigation-actions-already-taken)
+  - [Monitoring Actions](#-monitoring-actions)
 - [Conclusion](#conclusion)
 
 ---
