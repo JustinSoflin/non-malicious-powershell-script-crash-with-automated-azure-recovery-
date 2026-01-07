@@ -17,7 +17,7 @@
 - [Report Information](#report-information)
 - [Executive Summary](#executive-summary)
 - [Investigation](#investigation)
-  - [_pwncrypt.ps1_ Stops Unexpectedly](#-pwncryptps1-stops-unexpectedly)
+  - [_pwncrypt.ps1_ Stops Unexpectedly](#pwncryptps1-stops-unexpectedly)
   - [Windows Error Reporting Detects Crash](#windows-error-reporting-detects-crash)
   - [Azure MMA Heartbeat Service Installed](#azure-mma-heartbeat-service-installed)
   - [Guest Configuration Compliance Checks _`gc_worker.exe`_](#guest-configuration-compliance-checks-_gc_workerexe_)
@@ -50,7 +50,7 @@ These events reflect Azure control-plane remediation efforts against a **degrade
   
 ## Investigation
 
-### _pwncrypt.ps1_ Stops Unexpectedly
+### pwncrypt.ps1 Stops Unexpectedly
 - Multiple **scheduled PowerShell scripts** were configured to run on _`windows-target-1`_
 - The scheduled **_pwncrypt.ps1_** script stops unexpectedly at **`2025-11-24T04:12:59.7367393Z`**
 - No subsequent scheduled scripts executed after this point
