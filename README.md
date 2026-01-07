@@ -16,7 +16,7 @@
 
 - [Report Information](#report-information)
 - [Executive Summary](#executive-summary)
-  - [**Notable Events**](#notable-events)
+  - [**Notable Events**](#**notable-events**)
 - [Investigation](#investigation)
   - [_pwncrypt.ps1_ Stops Unexpectedly](#_pwncryptps1_stops-unexpectedly)
   - [Windows Error Reporting Detects Crash](#windows-error-reporting-detects-crash)
