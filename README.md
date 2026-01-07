@@ -16,9 +16,8 @@
 
 - [Report Information](#report-information)
 - [Executive Summary](#executive-summary)
-  - [Notable Events](#**notable-events**)
 - [Investigation](#investigation)
-  - [_pwncrypt.ps1_ Stops Unexpectedly](#_pwncryptps1_stops-unexpectedly)
+  - [_pwncrypt.ps1_ Stops Unexpectedly](#-pwncryptps1-stops-unexpectedly)
   - [Windows Error Reporting Detects Crash](#windows-error-reporting-detects-crash)
   - [Azure MMA Heartbeat Service Installed](#azure-mma-heartbeat-service-installed)
   - [Guest Configuration Compliance Checks _`gc_worker.exe`_](#guest-configuration-compliance-checks-_gc_workerexe_)
