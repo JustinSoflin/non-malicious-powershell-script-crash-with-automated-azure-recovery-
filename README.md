@@ -34,8 +34,9 @@ _`windows-target-1`_, a **honeypot virtual machine** used in the Cyber Range SOC
 Post-crash telemetry indicates that Azure attempted automated recovery, including 
    - Guest Configuration assessments
    - Custom Script Extension retries
-   - Defender/HealthService activity
-These events reflect Azure control-plane remediation efforts against a **degraded guest state**, rather than continued attack activity or malicious persistence.
+   - Defender/HealthService activity <br>
+   
+   These events reflect Azure control-plane remediation efforts against a **degraded guest state**, rather than continued attack activity or malicious persistence.
 
 - **Notable Events**
    - Honeypot VM _`windows-target-1`_ unexpectedly went offline for about _42 days_
