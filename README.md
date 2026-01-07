@@ -20,12 +20,12 @@
   - [_pwncrypt.ps1_ Stops Unexpectedly](#pwncryptps1-stops-unexpectedly)
   - [Windows Error Reporting Detects Crash](#windows-error-reporting-detects-crash)
   - [Azure MMA Heartbeat Service Installed](#azure-mma-heartbeat-service-installed)
-  - [Guest Configuration Compliance Checks _`gc_worker.exe`_](#guest-configuration-compliance-checks-_gc_workerexe_)
+  - [Guest Configuration Compliance Checks gc_worker.exe](#guest-configuration-compliance-checks-gc_workerexe)
   - [Restarting the VM Did Not Restore Functionality](#restarting-the-vm-did-not-restore-functionality)
 - [Recommended Actions](#recommended-actions)
-  - [Immediate Recovery Actions](#immediate-recovery-actions)
-  - [Investigation Actions Already Taken](#investigation-actions-already-taken)
-  - [Monitoring Actions](#monitoring-actions)
+  - [Immediate Recovery Actions](#1-immediate-recovery-actions)
+  - [Investigation Actions Already Taken](#2-investigation-actions-already-taken)
+  - [Monitoring Actions](#3-monitoring-actions)
 - [Conclusion](#conclusion)
 
 ---
@@ -107,7 +107,7 @@ DeviceEvents
 
 <Br>
 
-### Guest Configuration compliance checks _`gc_worker.exe`_
+### Guest Configuration compliance checks gc_worker.exe
 
 - Azure repeatedly runs gc_worker.exe attempting to re‑establish trust and validate the VM after the guest agent became unstable
 - Some compliance checks are _NonCompliant_ because the VM is in a partial / degraded state
