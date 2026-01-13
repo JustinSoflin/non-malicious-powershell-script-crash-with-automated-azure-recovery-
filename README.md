@@ -105,6 +105,12 @@ DeviceProcessEvents
    - In agent-driven recovery scenarios, buffered logs are dumped together
    - KQL _TimeGenerated_ is often Event creation time, ingestion time, or flush time, not the precise moment each internal action occurred
    - This is the same reason PowerShell telemetry appeared after WerFault — buffering, not delayed execution
+ 
+     <br>
+
+     <img width="1400" alt="COPY pwncrypt crash" src="https://github.com/user-attachments/assets/a6ca81e8-7709-4255-8070-1ed6317ab275" />
+
+<br>
 
 ```kql
 let crash = todatetime('2025-11-24T04:10:00');
@@ -145,6 +151,26 @@ DeviceEvents
 - A VM reboot restarts the OS, but does not necessarily repair Azure VM Agent
 - If the crash impacted the Azure VM Agent, ARM API commands will fail or time out indefinitely
 - The attack simulator relies on SYSTEM-level commands via ARM. If Azure can’t authenticate to the guest or launch scripts as SYSTEM, no simulated attacks will run
+
+ <br>
+
+ <img width="1400" alt="COPY pwncrypt crash (1)" src="https://github.com/user-attachments/assets/840e4bc3-8267-4e31-aa6c-581f52fef7c2" />
+  
+  <br>
+
+### Why Redeploying worked
+- Redeploying a VM
+   - Moves the VM to a new Azure host
+   - Reinstalls the Azure Guest Agent
+   - Re-registers extensions cleanly
+   - Re-establishes ARM ↔ agent trust
+- Redeploying effectively resets the Azure Management plane trust connection, not just the OS
+
+  <br>
+
+  <img width="1400" alt="REDEPLOY pwncrypt crash" src="https://github.com/user-attachments/assets/ec51200b-4da1-4270-b898-8c0d5f24436d" />
+
+<br>
 
 ---
 
