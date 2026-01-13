@@ -1,6 +1,6 @@
 # Non-Malicious Powershell Script Crash
 
-<img width="1489" height="732" alt="Untitled drawing (2)" src="https://github.com/user-attachments/assets/190e843b-dc09-4cef-8225-4808ae155547" />
+<img width="1400" alt="Untitled drawing (4)" src="https://github.com/user-attachments/assets/e0370a48-91e1-4853-b521-bf0e8dd7f72c" />
 
 
 ## Report Information
